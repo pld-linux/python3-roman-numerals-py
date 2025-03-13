@@ -5,7 +5,7 @@
 Summary:	A library for manipulating well-formed Roman numerals
 Name:		python3-%{module}
 Version:	3.1.0
-Release:	1
+Release:	2
 License:	CC0 1.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/MODULE/
