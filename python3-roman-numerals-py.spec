@@ -15,15 +15,16 @@ Source0:	https://files.pythonhosted.org/packages/source/r/roman_numerals_py/roma
 # Source0-md5:	818e8252ca189c657bf7f860824eceb9
 URL:		https://pypi.org/project/roman-numerals-py/
 BuildRequires:	python3-build
-BuildRequires:	python3-flit_core
+BuildRequires:	python3-flit_core >= 3.7
+BuildRequires:	python3-flit_core < 4
 BuildRequires:	python3-installer
-BuildRequires:	python3-modules >= 1:3.2
+BuildRequires:	python3-modules >= 1:3.9
 %if %{with tests}
-BuildRequires:	python3-pytest
+BuildRequires:	python3-pytest >= 8
 %endif
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
-Requires:	python3-modules >= 1:3.2
+Requires:	python3-modules >= 1:3.9
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
